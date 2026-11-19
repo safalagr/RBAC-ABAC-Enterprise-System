@@ -10,8 +10,6 @@ import {
   UserCheck,
   Plus,
   Send,
-  Eye,
-  ArrowRight,
   ShieldAlert,
   FileText,
   User,

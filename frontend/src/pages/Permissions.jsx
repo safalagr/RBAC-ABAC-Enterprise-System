@@ -10,12 +10,8 @@ import {
   X,
   Check,
   GitBranch,
-  Shield,
   Search,
-  Filter,
-  Info,
-  CheckCircle2,
-  AlertCircle
+  Filter
 } from 'lucide-react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { useAuth } from '../context/AuthContext';
@@ -25,7 +21,7 @@ export default function Permissions() {
   const [activeTab, setActiveTab] = useState('matrix'); // 'matrix' or 'list'
   const [permissions, setPermissions] = useState([]);
   const [roles, setRoles] = useState([]);
-  const [resources, setResources] = useState([]);
+  const [, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
   const [togglingRolePerm, setTogglingRolePerm] = useState(null); // { roleId, permId }
   const [searchQuery, setSearchQuery] = useState('');

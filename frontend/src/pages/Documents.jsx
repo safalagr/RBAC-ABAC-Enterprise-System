@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { documentAPI } from '../utils/api';
-import { FileText, Plus, Shield, Lock, Eye, Building, Award, CheckCircle, AlertTriangle } from 'lucide-react';
+import { FileText, Plus, Shield, Lock, Eye, Building, Award } from 'lucide-react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { useAuth } from '../context/AuthContext';
 
