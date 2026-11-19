@@ -103,9 +103,7 @@ export const verifyChainIntegrity = async () => {
 
   let expectedPreviousHash = GENESIS_PREVIOUS_HASH;
 
-  for (let i = 0; i < allLogs.length; i++) {
-    const log = allLogs[i];
-
+  for (const log of allLogs) {
     // Check link integrity (Does previousHash match the preceding row's hash?)
     if (log.previousHash !== expectedPreviousHash) {
       return {
